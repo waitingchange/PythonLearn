@@ -13,8 +13,9 @@ def main():
         if os.path.isfile(os.path.join(curPath,i)):
             pass
         else:
-            print 'remove folder' , i
-            os.system('rm -rf ' + i)
+            if i == 'test':
+                print 'remove folder' , i
+                os.system('rm -rf ' + i)
 
     os.system('mkdir test')
 
