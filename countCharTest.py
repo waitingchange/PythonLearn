@@ -43,8 +43,8 @@ JnKGFMTggrWjV8GYpw5bq23VmIqqDLgkNzuoog=='''
 print (len(code))
 
 count = 0
-
-for i in range(len(code)):
+codeLen = len(code)
+for i in range(codeLen):
     if code[i] == 'A':
         count = count + 1
 
