@@ -1,5 +1,5 @@
 
-
+import re
 
 code = '''43B4A73YYJ-eyJsaWNlbnNlSWQiOiI0M0I0QTczWVlKIiwibGljZW5zZWVOYW1lIjoibGFuIHl1IiwiYXNza
 WduZWVOYW1lIjoiIiwiYXNzaWduZWVFbWFpbCI6IiIsImxpY2Vuc2VSZXN0cmljdGlvbiI6IkZvciBlZHVj
@@ -48,5 +48,11 @@ for i in range(codeLen):
     if code[i] == 'A':
         count = count + 1
 
+num = code.find('AB')
+print num
+p = r'AB'
+m=re.findall(p,code)
+print 'm is = ',m
+print 'm len is ',len(m)
 
 print "count A total is " , count
